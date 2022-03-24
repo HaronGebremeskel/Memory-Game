@@ -46,17 +46,24 @@ The following **optional** features are implemented:
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
     * w3schools.com
     * stackoverflow
+    * youtube
     * Udemy.com
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+
+I did not encounter any challnge since everything has a walkthrough and it was easy to follow, but since i dont have any background with javascript i had a little trouble understanding the syntax, but i was able to understand some of it by going over the developer documenations, watching some youtube videos and by referencing w3school.
+
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
 
-4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+    * How are technologies determined when designing a website?
+    * Which database scheme is considered when creating sites that do data storage?
+    * How is testing accomplished for websites? How different is the testing from web to Python or another language?
+    * How are websites transformed as technology changes? Are they revamped completely or is existing code reused in some manner?
 
+4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. 
+
+I would like to add some additional features and rearrange the page layout to make it look nicer. I would also like to add difficulty levels and enable the users to choose. For example, in a simple game, a pattern consists of 6 elements. In a medium level 10 - 12 elements and in a difficult level , a pattern can have 14 - 16 elements. Or the users can decide on the number of elements in the pattern freely. To do this, I need to add an input field for the users, either a dropdown list or a text field, and enable generatePattern() function to take user inputs and generate patterns according to user demands. I also want to reorganize the code into different components using React to help better manage the code.
 
 
 ## Interview Recording URL Link
