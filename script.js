@@ -1,16 +1,23 @@
-var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
+var pattern = [2, 6, 4, 3, 2, 1, 5, 4];
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
-
+var count = 20;
+var reset = false;
 
 const clueHoldTime = 1000;
 const cluePauseTime = 333;
 const nextClueWaitTime = 1000;
+const len = 6;
 
 
+function generatePattern(){
+  for(let j = 0; j < len; j++){
+    pattern[j] = Math.ceil(Math.random() * 6);
+  }
+}
 
 
 function startGame(){
@@ -18,22 +25,26 @@ function startGame(){
   gamePlaying = true;
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
+  generatePattern();
   playClueSequence();
-
 }
+
 
 function stopGame(){
   gamePlaying = false;
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
- 
+  reset = true;
 }
 
+
 const freqMap = {
-  1: 261.6,
-  2: 329.6,
-  3: 392,
-  4: 466.2,
+  1: 112.6,
+  2: 210.6,
+  3: 305,
+  4: 415.2,
+  5: 520.6,
+  6: 625.2,
 }
 
 
@@ -92,7 +103,6 @@ function playSingleClue(btn){
 
 function playClueSequence(){
   guessCounter = 0;
-  context.resume()
   let delay = nextClueWaitTime;
   
   for(let i = 0; i<= progress; i++){
@@ -103,18 +113,22 @@ function playClueSequence(){
   }
 }
 
+
 function loseGame(){
   stopGame();
   alert("Game Over. You lost.")
 }
+
 
 function winGame(){
   stopGame();
   alert("Game Over. You Won!")
 }
 
+
 function guess(btn){
   console.log("user guessed: " + btn);
+  
   if(!gamePlaying){
     return;
   }
@@ -123,6 +137,7 @@ function guess(btn){
     if (guessCounter == progress){
       if(progress == pattern.length-1){
         winGame();
+        reset = true;
       }else{
         progress++;
         playClueSequence();
@@ -134,3 +149,4 @@ function guess(btn){
     loseGame();
   }
 }
+    
