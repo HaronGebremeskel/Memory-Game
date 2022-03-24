@@ -37,6 +37,11 @@ The following **optional** features are implemented:
 
 <img src="http://g.recordit.co/LXPs4zZU2H.gif" width=1000 length = 1000><br> 
 
+<img src="http://g.recordit.co/bKftinVq8j.gif" width=1000 length = 1000><br> 
+
+<img src="http://g.recordit.co/L4o5v3UiqE.gif" width=1000 length = 1000><br> 
+
+
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
     * w3schools.com
