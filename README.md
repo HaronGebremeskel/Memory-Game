@@ -4,9 +4,9 @@
 
 Submitted by: **Haron Gebremeskel**
 
-Time spent: **6** hours spent in total
+Time spent: **8** hours spent in total
 
-Link to project: (https://spiced-cubic-appendix.glitch.me/)
+Link to project: https://spiced-cubic-appendix.glitch.me/
 
 ## Required Functionality
 
@@ -22,24 +22,21 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 
-* [ ] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
-* [ ] Buttons use a pitch (frequency) other than the ones in the tutorial
-* [ ] More than 4 functional game buttons
+* [x] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
+* [x] Buttons use a pitch (frequency) other than the ones in the tutorial
+* [x] More than 4 functional game buttons
 * [ ] Playback speeds up on each turn
-* [ ] Computer picks a different pattern each time the game is played
+* [x] Computer picks a different pattern each time the game is played
 * [ ] Player only loses after 3 mistakes (instead of on the first mistake)
 * [ ] Game button appearance change goes beyond color (e.g. add an image)
 * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [ ] User has a limited amount of time to enter their guess on each turn
 
-The following **additional** features are implemented:
-
-- [ ] List anything else that you can get done to improve the app!
 
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](gif1-link-here)
+![]http://g.recordit.co/LXPs4zZU2H.gif
 ![](gif2-link-here)
 ![](gif3-link-here)
 ![](gif4-link-here)
